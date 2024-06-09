@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/piano"
+        android:alpha="1">
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/statement"
+        android:layout_width="413dp"
+        android:layout_height="731dp"
+        android:layout_marginBottom="140dp"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="106dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/app_title"
+            android:textColor="@color/purple_200"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="272dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#FADDBB"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/version_1_0_00"
+            android:textColor="@color/purple_200"
+            android:textSize="25sp"
+            android:layout_margin="40dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="272dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#FADDBB"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/author"
+            android:textColor="@color/purple_200"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/checkisnew"
+            android:layout_width="267dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#FADDBB"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/isnew"
+            android:textColor="@color/purple_200"
+            android:textSize="25sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

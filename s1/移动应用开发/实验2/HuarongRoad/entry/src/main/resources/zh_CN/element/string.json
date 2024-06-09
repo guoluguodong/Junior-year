@@ -1,0 +1,136 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "mainability_title",
+      "value": "数字华容道"
+    },
+    {
+      "name": "huarongdao_start_game",
+      "value": "数字华容道游戏"
+    },
+    {
+      "name": "mainability_pintu",
+      "value": "拼图游戏"
+    },
+    {
+      "name": "mainability_config",
+      "value": "介绍说明"
+    },
+    {
+      "name": "mainability_about_author",
+      "value": "关于作者"
+    },
+    {
+      "name": "huarongpath_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "huarongpath_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_HuarongPath",
+      "value": "entry_HuarongPath"
+    },
+    {
+      "name": "album_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "album_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_Album",
+      "value": "entry_Album"
+    },
+    {
+      "name": "pagealbum_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "pagealbum_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_PageAlbum",
+      "value": "entry_PageAlbum"
+    },
+    {
+      "name": "statementhelp_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "statementhelp_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_StatementHelp",
+      "value": "entry_StatementHelp"
+    },
+    {
+      "name": "StatementHelp",
+      "value": "数字华容道有三乘三、四乘四、五乘五三个难度。三乘三就是一共9个格子，需要移动1到8八个数字；四乘四就是一共16个格子，需要移动1到15十五个数字；五乘五就是一共25个格子，需要移动1到24二十四个数字；随着数字的增多，游戏的难度也随之增大。首先将数字完全打乱，然后每次移动一个数字，最后将所有数字按顺序复原。首先将数字完全打乱，然后每次移动一个数字，最后将所有数字按顺序复原"
+    },
+    {
+      "name": "aboutauthor_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "aboutauthor_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_AboutAuthor",
+      "value": "entry_AboutAuthor"
+    },
+    {
+      "name": "author",
+      "value": "作者：    李宽宇"
+    },
+    {
+      "name": "studentID",
+      "value": "学号：20215279"
+    },
+    {
+      "name": "version",
+      "value": "版本：1.00"
+    },
+    {
+      "name": "gamelevel_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "gamelevel_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_GameLevel",
+      "value": "entry_GameLevel"
+    },
+    {
+      "name": "historyscore_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "historyscore_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_HistoryScore",
+      "value": "entry_HistoryScore"
+    }
+  ]
+}

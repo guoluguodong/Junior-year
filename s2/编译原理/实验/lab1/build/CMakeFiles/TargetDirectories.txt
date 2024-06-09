@@ -1,0 +1,5 @@
+C:/Users/a3840/Desktop/lab1test/build/CMakeFiles/jsoncpp.dir
+C:/Users/a3840/Desktop/lab1test/build/CMakeFiles/Front.dir
+C:/Users/a3840/Desktop/lab1test/build/CMakeFiles/compiler.dir
+C:/Users/a3840/Desktop/lab1test/build/CMakeFiles/edit_cache.dir
+C:/Users/a3840/Desktop/lab1test/build/CMakeFiles/rebuild_cache.dir

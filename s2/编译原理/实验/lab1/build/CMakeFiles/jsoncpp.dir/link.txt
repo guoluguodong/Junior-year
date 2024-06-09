@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc C:\Users\a3840\Desktop\lab1test\bin\libjsoncpp.a CMakeFiles/jsoncpp.dir/src/third_party/jsoncpp/jsoncpp.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe C:\Users\a3840\Desktop\lab1test\bin\libjsoncpp.a

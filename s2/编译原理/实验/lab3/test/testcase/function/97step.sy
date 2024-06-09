@@ -1,0 +1,4 @@
+int main() {
+  float a = 2.9;
+  putint(a);
+}

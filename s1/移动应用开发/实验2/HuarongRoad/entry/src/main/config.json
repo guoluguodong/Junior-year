@@ -1,0 +1,110 @@
+{
+  "app": {
+    "bundleName": "com.example.myapplication",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.example.myapplication",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.myapplication.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.READ_USER_STORAGE"
+      },
+      {
+        "name": "ohos.permission.WRITE_USER_STORAGE"
+      }
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.myapplication.MainAbility",
+        "description": "$string:mainability_description",
+        "icon": "$media:icon",
+        "label": "$string:huarongdao_start_game",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
+      },
+      {
+        "name": "com.example.myapplication.HuarongPath",
+        "description": "$string:huarongpath_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_HuarongPath",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "type": "page"
+      },
+      {
+        "name": "com.example.myapplication.PageAlbum",
+        "description": "$string:pagealbum_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_PageAlbum",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "type": "page"
+      },
+      {
+        "name": "com.example.myapplication.StatementHelp",
+        "description": "$string:statementhelp_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_StatementHelp",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "type": "page"
+      },
+      {
+        "name": "com.example.myapplication.AboutAuthor",
+        "description": "$string:aboutauthor_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_AboutAuthor",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "type": "page"
+      },
+      {
+        "name": "com.example.myapplication.GameLevel",
+        "description": "$string:gamelevel_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_GameLevel",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "type": "page"
+      },
+      {
+        "name": "com.example.myapplication.HistoryScore",
+        "description": "$string:historyscore_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_HistoryScore",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "type": "page"
+      }
+    ]
+  }
+}

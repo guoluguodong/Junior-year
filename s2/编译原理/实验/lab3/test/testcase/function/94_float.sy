@@ -1,0 +1,12 @@
+const float PI = 3.14;
+int main(){
+    float input = getfloat();
+    float a;
+    if (input < 0) {
+        a = -input;
+    }
+    putfloat(a);
+    putch(10);
+    float area = PI*input*input;
+    putfloat(area);
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$media:mountains_sunset_art_146043_800x1200">
+
+    <Text
+        ohos:id="$+id:text_helloworld"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:top_margin="100vp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:mainability_title"
+        ohos:text_size="60vp"
+        ohos:text_color="$ohos:color:fa_activated"
+        />
+    <Button
+        ohos:id="$+id:startgame"
+        ohos:height="match_content"
+        ohos:width="900px"
+        ohos:top_margin="50vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:huarongdao_start_game"
+        ohos:text_size="30vp"
+        />
+    <Button
+        ohos:id="$+id:historyscore"
+        ohos:height="match_content"
+        ohos:width="900px"
+        ohos:top_margin="20vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="历史得分"
+        ohos:text_size="30vp"
+        />
+    <Button
+        ohos:id="$+id:statement"
+        ohos:height="match_content"
+        ohos:width="900px"
+        ohos:top_margin="20vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:mainability_config"
+        ohos:text_size="30vp"
+        />
+    <Button
+        ohos:id="$+id:about_author"
+        ohos:height="match_content"
+        ohos:width="900px"
+        ohos:top_margin="20vp"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:mainability_about_author"
+        ohos:text_size="30vp"
+        />
+
+</DirectionalLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.187" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable/btn_disappear.xml" value="0.113" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable/btn_normal.xml" value="0.1" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable/btn_pressed.xml" value="0.1" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable/btn_selected.xml" value="0.113" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable/btn_selected1.xml" value="0.113" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable/btn_selector.xml" value="0.1" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable/btn_selector2.xml" value="0.156" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/drawable/ic_launcher_background.xml" value="0.187" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/activity_about_author.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/activity_aboutme.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/activity_homepage.xml" value="0.2" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/activity_result.xml" value="0.19480519480519481" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/activity_statement.xml" value="0.264" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/btn_selector.xml" value="0.1" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/content_result.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/flip_anm.xml" value="0.12335359675785208" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/fragment_first.xml" value="0.264" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="..\:/Users/a3840/Desktop/cal24/app/src/main/res/layout/train_model_layout.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.176" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

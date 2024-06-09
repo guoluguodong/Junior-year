@@ -1,0 +1,5 @@
+/coursegradersubmit/build/CMakeFiles/rebuild_cache.dir
+/coursegradersubmit/build/CMakeFiles/edit_cache.dir
+/coursegradersubmit/build/CMakeFiles/compiler.dir
+/coursegradersubmit/build/CMakeFiles/jsoncpp.dir
+/coursegradersubmit/build/CMakeFiles/Front.dir

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$media:mountains_sunset_art_146043_800x1200"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text_helloworld"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:mainability_title"
+        ohos:text_color="$ohos:color:fa_activated"
+        ohos:text_size="60vp"
+        ohos:top_margin="100vp"
+        />
+
+    <Button
+        ohos:id="$+id:author"
+        ohos:height="match_content"
+        ohos:background_element="#FFF4FAF7"
+        ohos:width="800px"
+        ohos:layout_alignment="center"
+        ohos:text="$string:author"
+        ohos:text_color="$ohos:color:fa_activated"
+        ohos:text_size="20vp"
+        ohos:top_margin="30vp"
+        />
+    <Button
+        ohos:id="$+id:studentID"
+        ohos:height="match_content"
+        ohos:background_element="#FFF4FAF7"
+        ohos:width="800px"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:studentID"
+        ohos:text_color="$ohos:color:fa_activated"
+
+        ohos:text_size="20vp"
+        ohos:top_margin="30vp"
+        />
+    <Button
+        ohos:id="$+id:version"
+        ohos:height="match_content"
+        ohos:background_element="#FFF4FAF7"
+        ohos:width="800px"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:version"
+        ohos:text_color="$ohos:color:fa_activated"
+        ohos:text_size="20vp"
+        ohos:top_margin="30vp"
+        />
+
+    <Button
+        ohos:id="$+id:goback"
+        ohos:height="match_content"
+        ohos:width="400px"
+        ohos:background_element="$graphic:capsule_button_element"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="返回"
+        ohos:text_size="40vp"
+        ohos:top_margin="20vp"
+        />
+
+
+</DirectionalLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.example</OriginalElement>
+  <nodes>
+    <node x="-1147.9375" y="512.5625000000002">org.example.MyClass</node>
+    <node x="-534.125" y="345.6875000000002">org.example.CommandLineMenu</node>
+    <node x="-499.9375" y="150.6875">org.example.MethodOrder</node>
+    <node x="-959.4375000000001" y="334.75000000000006">org.example.ClassRelationshipTeacher</node>
+    <node x="-1109.5" y="51.93750000000003">org.example.Person</node>
+    <node x="-1227.25" y="186.0">org.example.Student</node>
+    <node x="-1529.3124999999998" y="312.0">org.example.StudentRelationshipClass.StudentGrade</node>
+    <node x="-580.7500000000001" y="90.37500000000011">org.example.CenteredCommandLineTable</node>
+    <node x="-944.0" y="186.0">org.example.Teacher</node>
+    <node x="-1287.25" y="334.75000000000006">org.example.StudentRelationshipClass</node>
+    <node x="-1120.1875000000002" y="828.4999999999997">org.example.Course</node>
+    <node x="-1160.0" y="743.1874999999998">org.example.ClassRelationshipCourse</node>
+    <node x="-469.9375" y="281.93749999999994">org.example.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.example.ClassRelationshipTeacher" target="org.example.Teacher" relationship="TO_ONE">
+      <point x="-48.562499999999886" y="-14.0" />
+      <point x="-4.0" y="14.0" />
+    </edge>
+    <edge source="org.example.Course" target="org.example.ClassRelationshipCourse" relationship="TO_MANY">
+      <point x="37.25" y="-14.0" />
+      <point x="-1033.9375000000002" y="746.5" />
+      <point x="-1023.4375000000002" y="746.5" />
+      <point x="27.562499999999773" y="14.0" />
+    </edge>
+    <edge source="org.example.Teacher" target="org.example.ClassRelationshipTeacher" relationship="TO_MANY">
+      <point x="26.0" y="14.0" />
+      <point x="-866.0" y="360.0" />
+      <point x="-791.4375000000001" y="360.0" />
+      <point x="56.0" y="-14.0" />
+    </edge>
+    <edge source="org.example.ClassRelationshipCourse" target="org.example.Course" relationship="TO_ONE">
+      <point x="-20.187500000000227" y="14.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="org.example.MyClass" target="org.example.ClassRelationshipTeacher" relationship="TO_ONE">
+      <point x="102.96875" y="0.0" />
+      <point x="-847.4375000000001" y="530.4687500000002" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.example.ClassRelationshipTeacher" target="org.example.MyClass" relationship="TO_ONE">
+      <point x="-104.5" y="14.0" />
+      <point x="93.03124999999989" y="-17.90625" />
+    </edge>
+    <edge source="org.example.MyClass" target="org.example.StudentRelationshipClass" relationship="TO_MANY">
+      <point x="-95.46875" y="-17.90625" />
+      <point x="34.3125" y="14.0" />
+    </edge>
+    <edge source="org.example.StudentRelationshipClass" target="org.example.MyClass" relationship="TO_ONE">
+      <point x="105.0" y="14.0" />
+      <point x="-24.78125" y="-17.90625" />
+    </edge>
+    <edge source="org.example.Teacher" target="org.example.Course" relationship="TO_MANY">
+      <point x="52.0" y="0.0" />
+      <point x="-717.9375000000001" y="200.0" />
+      <point x="-717.9375000000001" y="842.4999999999997" />
+      <point x="49.0" y="0.0" />
+    </edge>
+    <edge source="org.example.StudentRelationshipClass.StudentGrade" target="org.example.StudentRelationshipClass" relationship="INNER_CLASS">
+      <point x="0.0" y="-14.0" />
+      <point x="-1456.3124999999998" y="264.43749999999994" />
+      <point x="-1204.75" y="264.43749999999994" />
+      <point x="-30.0" y="-14.0" />
+    </edge>
+    <edge source="org.example.ClassRelationshipCourse" target="org.example.MyClass" relationship="TO_ONE">
+      <point x="-37.83849299065423" y="-14.0" />
+      <point x="-43.86974299065423" y="17.90625" />
+    </edge>
+    <edge source="org.example.MyClass" target="org.example.ClassRelationshipCourse" relationship="TO_ONE">
+      <point x="-15.0" y="17.90625" />
+      <point x="-8.96875" y="-14.0" />
+    </edge>
+    <edge source="org.example.Teacher" target="org.example.Person" relationship="GENERALIZATION">
+      <point x="-52.0" y="0.0" />
+      <point x="-1054.75" y="200.0" />
+      <point x="6.25" y="14.0" />
+    </edge>
+    <edge source="org.example.Student" target="org.example.Person" relationship="GENERALIZATION">
+      <point x="52.5" y="0.0" />
+      <point x="-1069.75" y="200.0" />
+      <point x="-8.75" y="14.0" />
+    </edge>
+    <edge source="org.example.Student" target="org.example.StudentRelationshipClass" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="org.example.StudentRelationshipClass" target="org.example.StudentRelationshipClass.StudentGrade" relationship="TO_ONE">
+      <point x="-2.75" y="14.0" />
+      <point x="-1177.5" y="391.1875000000002" />
+      <point x="-1456.3124999999998" y="391.1875000000002" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.example.StudentRelationshipClass" target="org.example.Student" relationship="TO_ONE">
+      <point x="-15.0" y="-14.0" />
+      <point x="-15.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.7663438256658596" showDependencies="true" x="-914.0" y="453.99999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
