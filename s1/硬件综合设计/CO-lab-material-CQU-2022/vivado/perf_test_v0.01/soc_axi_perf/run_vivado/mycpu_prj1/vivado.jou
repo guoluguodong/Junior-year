@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jan 12 15:38:35 2024
+# Process ID: 2904
+# Current directory: C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18056 C:\Users\a3840\Desktop\CO-lab-material-CQU-2022\CO-lab-material-CQU-2022\vivado\perf_test_v0.01\soc_axi_perf\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/a3840/Desktop/axi/defines.vh
+add_files -norecurse {C:/Users/a3840/Desktop/axi/d_cache-write_through.v C:/Users/a3840/Desktop/axi/data_sel.v C:/Users/a3840/Desktop/axi/controller.v C:/Users/a3840/Desktop/axi/datapath.v C:/Users/a3840/Desktop/axi/except.v C:/Users/a3840/Desktop/axi/d_cache-write_back-4_ways-PLRU.v C:/Users/a3840/Desktop/axi/main_decoder.v C:/Users/a3840/Desktop/axi/sram_mips.v C:/Users/a3840/Desktop/axi/d_cache-write_back-2_ways-LRU.v C:/Users/a3840/Desktop/axi/hilo_reg.v C:/Users/a3840/Desktop/axi/bridge_2x1.v C:/Users/a3840/Desktop/axi/cache.v C:/Users/a3840/Desktop/axi/i_cache.v C:/Users/a3840/Desktop/axi/regfile.v C:/Users/a3840/Desktop/axi/flopenrc.v C:/Users/a3840/Desktop/axi/i_sram_to_sram_like.v C:/Users/a3840/Desktop/axi/instdec.v C:/Users/a3840/Desktop/axi/mmu.v C:/Users/a3840/Desktop/axi/alu.v C:/Users/a3840/Desktop/axi/alu_decoder.v C:/Users/a3840/Desktop/axi/bridge_1x2.v C:/Users/a3840/Desktop/axi/normal_divider.v C:/Users/a3840/Desktop/axi/d_sram_to_sram_like.v C:/Users/a3840/Desktop/axi/axi_mycpu_top.v C:/Users/a3840/Desktop/axi/cp0_reg.v C:/Users/a3840/Desktop/axi/sram_like_mips.v C:/Users/a3840/Desktop/axi/cpu_axi_interface.v C:/Users/a3840/Desktop/axi/hazard_unit.v}
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_ram/axi_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_ram/axi_ram.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci]
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci]
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_run {clk_pll_synth_1 axi_ram_synth_1 axi_crossbar_1x2_synth_1 axi_clock_converter_synth_1}
+wait_on_run clk_pll_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run axi_ram_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run axi_ram_synth_1
+wait_on_run axi_crossbar_1x2_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run axi_ram_synth_1
+wait_on_run axi_crossbar_1x2_synth_1
+wait_on_run axi_clock_converter_synth_1
+
+launch_simulation
+source tb_top.tcl
+run all
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {44} CONFIG.MMCM_CLKFBOUT_MULT_F {11} CONFIG.MMCM_CLKOUT0_DIVIDE_F {25} CONFIG.MMCM_CLKOUT1_DIVIDE {11} CONFIG.CLKOUT1_JITTER {146.812} CONFIG.CLKOUT1_PHASE_ERROR {92.672} CONFIG.CLKOUT2_JITTER {123.670} CONFIG.CLKOUT2_PHASE_ERROR {92.672}] [get_ips clk_pll]
+delete_ip_run [get_files -of_objects [get_fileset clk_pll] C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+set_property generate_synth_checkpoint false [get_files  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+generate_target all [get_files  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/impl_1/soc_axi_lite_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/impl_1/soc_axi_lite_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/impl_1/soc_axi_lite_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/impl_1/soc_axi_lite_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

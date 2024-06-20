@@ -1,0 +1,55 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 51e12c418e714f398eb466504c7e82bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'wea' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:167]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'btn_step' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:226]
+WARNING: [VRFC 10-5021] port 'HiLoWriteW' is not connected on this instance [C:/Users/a3840/Desktop/src/sram/sram_mips.v:158]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_sel
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.alu_decoder
+Compiling module xil_defaultlib.flopenrc(N=26)
+Compiling module xil_defaultlib.flopenrc(N=13)
+Compiling module xil_defaultlib.flopenrc(N=3)
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.normal_divider
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.except
+Compiling module xil_defaultlib.cp0_reg
+Compiling module xil_defaultlib.hazard_unit
+Compiling module xil_defaultlib.flopenrc
+Compiling module xil_defaultlib.flopenrc(N=130)
+Compiling module xil_defaultlib.flopenrc(N=214)
+Compiling module xil_defaultlib.flopenrc(N=269)
+Compiling module xil_defaultlib.flopenrc(N=101)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sram_mips
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.mycpu_top
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" Line 123. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

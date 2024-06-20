@@ -1,0 +1,59 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/alu_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2458] undeclared symbol BalD, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:103]
+INFO: [VRFC 10-2458] undeclared symbol HiLoReadE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:171]
+INFO: [VRFC 10-2458] undeclared symbol CP0ReadE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:180]
+INFO: [VRFC 10-2458] undeclared symbol HiLoWriteW, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:248]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/cp0_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/data_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/except.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module except
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/hazard_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/normal_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normal_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/sram_mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_mips
+INFO: [VRFC 10-2458] undeclared symbol ALUSrcE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:132]
+INFO: [VRFC 10-2458] undeclared symbol ImmSignE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:133]
+INFO: [VRFC 10-2458] undeclared symbol BreakM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:149]
+INFO: [VRFC 10-2458] undeclared symbol SyscallM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:150]
+INFO: [VRFC 10-2458] undeclared symbol EretM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:151]
+INFO: [VRFC 10-2458] undeclared symbol InvalidM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:152]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/sram_mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

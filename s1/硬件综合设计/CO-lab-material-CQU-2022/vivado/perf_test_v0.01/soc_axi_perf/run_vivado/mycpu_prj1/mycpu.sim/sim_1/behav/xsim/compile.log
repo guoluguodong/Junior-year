@@ -1,0 +1,82 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_ram/sim/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_clock_converter/sim/axi_clock_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_clock_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/alu_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/axi_mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/axi_wrap/axi_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/bridge_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2458] undeclared symbol HiLoReadD, assumed default net type wire [C:/Users/a3840/Desktop/axi/controller.v:105]
+INFO: [VRFC 10-2458] undeclared symbol HiLoReadE, assumed default net type wire [C:/Users/a3840/Desktop/axi/controller.v:166]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/cp0_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/cpu_axi_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_axi_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/d_cache-write_through.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/d_sram_to_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_sram_to_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/data_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2458] undeclared symbol HiLoReadE, assumed default net type wire [C:/Users/a3840/Desktop/axi/datapath.v:344]
+INFO: [VRFC 10-2458] undeclared symbol HiLoWriteW, assumed default net type wire [C:/Users/a3840/Desktop/axi/datapath.v:350]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/except.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module except
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/hazard_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/i_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/i_sram_to_sram_like.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_sram_to_sram_like
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/normal_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normal_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_axi_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/sram_like_mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_like_mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/axi/sram_mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_mips
+INFO: [VRFC 10-2458] undeclared symbol ALUSrcE, assumed default net type wire [C:/Users/a3840/Desktop/axi/sram_mips.v:133]
+INFO: [VRFC 10-2458] undeclared symbol ImmSignE, assumed default net type wire [C:/Users/a3840/Desktop/axi/sram_mips.v:134]
+INFO: [VRFC 10-2458] undeclared symbol BreakM, assumed default net type wire [C:/Users/a3840/Desktop/axi/sram_mips.v:150]
+INFO: [VRFC 10-2458] undeclared symbol SyscallM, assumed default net type wire [C:/Users/a3840/Desktop/axi/sram_mips.v:151]
+INFO: [VRFC 10-2458] undeclared symbol EretM, assumed default net type wire [C:/Users/a3840/Desktop/axi/sram_mips.v:152]
+INFO: [VRFC 10-2458] undeclared symbol InvalidM, assumed default net type wire [C:/Users/a3840/Desktop/axi/sram_mips.v:153]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

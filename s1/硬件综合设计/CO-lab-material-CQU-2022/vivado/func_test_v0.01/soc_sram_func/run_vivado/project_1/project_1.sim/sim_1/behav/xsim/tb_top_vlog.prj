@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../../../src/sram" --include "../../../../../../rtl/xilinx_ip/clk_pll" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../../../rtl/xilinx_ip/data_ram/sim/data_ram.v" \
+"../../../../../../rtl/xilinx_ip/inst_ram/sim/inst_ram.v" \
+"../../../../../../../../../../../src/sram/alu.v" \
+"../../../../../../../../../../../src/sram/alu_decoder.v" \
+"../../../../../../rtl/BRIDGE/bridge_1x2.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../../../../../../../../src/sram/controller.v" \
+"../../../../../../../../../../../src/sram/cp0_reg.v" \
+"../../../../../../../../../../../src/sram/data_sel.v" \
+"../../../../../../../../../../../src/sram/datapath.v" \
+"../../../../../../../../../../../src/sram/except.v" \
+"../../../../../../../../../../../src/sram/flopenrc.v" \
+"../../../../../../../../../../../src/sram/hazard_unit.v" \
+"../../../../../../../../../../../src/sram/hilo_reg.v" \
+"../../../../../../../../../../../src/sram/main_decoder.v" \
+"../../../../../../../../../../../src/sram/mmu.v" \
+"../../../../../../../../../../../src/sram/normal_divider.v" \
+"../../../../../../../../../../../src/sram/regfile.v" \
+"../../../../../../rtl/soc_lite_top.v" \
+"../../../../../../../../../../../src/sram/sram_mips.v" \
+"../../../../../../../../../../../src/sram/sram_mycpu_top.v" \
+"../../../../../../testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

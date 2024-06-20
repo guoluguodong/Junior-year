@@ -1,0 +1,43 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../../../axi" --include "../../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../mycpu.ip_user_files/ipstatic/hdl" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../../../rtl/xilinx_ip/axi_ram/sim/axi_ram.v" \
+"../../../../../../rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" \
+"../../../../../../rtl/xilinx_ip/axi_clock_converter/sim/axi_clock_converter.v" \
+"../../../../../../../../../../../axi/alu.v" \
+"../../../../../../../../../../../axi/alu_decoder.v" \
+"../../../../../../../../../../../axi/axi_mycpu_top.v" \
+"../../../../../../rtl/axi_wrap/axi_wrap.v" \
+"../../../../../../rtl/ram_wrap/axi_wrap_ram.v" \
+"../../../../../../../../../../../axi/bridge_1x2.v" \
+"../../../../../../../../../../../axi/bridge_2x1.v" \
+"../../../../../../../../../../../axi/cache.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../../../../../../../../axi/controller.v" \
+"../../../../../../../../../../../axi/cp0_reg.v" \
+"../../../../../../../../../../../axi/cpu_axi_interface.v" \
+"../../../../../../../../../../../axi/d_cache-write_through.v" \
+"../../../../../../../../../../../axi/d_sram_to_sram_like.v" \
+"../../../../../../../../../../../axi/data_sel.v" \
+"../../../../../../../../../../../axi/datapath.v" \
+"../../../../../../../../../../../axi/except.v" \
+"../../../../../../../../../../../axi/flopenrc.v" \
+"../../../../../../../../../../../axi/hazard_unit.v" \
+"../../../../../../../../../../../axi/hilo_reg.v" \
+"../../../../../../../../../../../axi/i_cache.v" \
+"../../../../../../../../../../../axi/i_sram_to_sram_like.v" \
+"../../../../../../../../../../../axi/main_decoder.v" \
+"../../../../../../../../../../../axi/mmu.v" \
+"../../../../../../../../../../../axi/normal_divider.v" \
+"../../../../../../../../../../../axi/regfile.v" \
+"../../../../../../rtl/soc_axi_lite_top.v" \
+"../../../../../../../../../../../axi/sram_like_mips.v" \
+"../../../../../../../../../../../axi/sram_mips.v" \
+"../../../../../../testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

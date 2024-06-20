@@ -1,0 +1,1198 @@
+
+*** Running vivado
+    with args -log soc_axi_lite_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_axi_lite_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source soc_axi_lite_top.tcl -notrace
+Command: synth_design -top soc_axi_lite_top -part xc7a100tcsg324-1 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5316 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 997.113 ; gain = 234.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_axi_lite_top' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:65]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll_clk_wiz' [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 11 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 11 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll_clk_wiz' (4#1) [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (5#1) [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.v:71]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:108]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [C:/Users/a3840/Desktop/axi/axi_mycpu_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sram_like_mips' [C:/Users/a3840/Desktop/axi/sram_like_mips.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sram_mips' [C:/Users/a3840/Desktop/axi/sram_mips.v:3]
+INFO: [Synth 8-6157] synthesizing module 'data_sel' [C:/Users/a3840/Desktop/axi/data_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'data_sel' (6#1) [C:/Users/a3840/Desktop/axi/data_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/a3840/Desktop/axi/controller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'main_decoder' [C:/Users/a3840/Desktop/axi/main_decoder.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'main_decoder' (7#1) [C:/Users/a3840/Desktop/axi/main_decoder.v:4]
+WARNING: [Synth 8-7023] instance 'main_decoder' of module 'main_decoder' has 26 connections declared, but only 25 given [C:/Users/a3840/Desktop/axi/controller.v:86]
+INFO: [Synth 8-6157] synthesizing module 'alu_decoder' [C:/Users/a3840/Desktop/axi/alu_decoder.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu_decoder' (8#1) [C:/Users/a3840/Desktop/axi/alu_decoder.v:4]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc' [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+	Parameter N bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc' (9#1) [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized0' [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+	Parameter N bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized0' (9#1) [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized1' [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized1' (9#1) [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (10#1) [C:/Users/a3840/Desktop/axi/controller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/a3840/Desktop/axi/datapath.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/a3840/Desktop/axi/regfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (11#1) [C:/Users/a3840/Desktop/axi/regfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/a3840/Desktop/axi/alu.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (12#1) [C:/Users/a3840/Desktop/axi/alu.v:4]
+INFO: [Synth 8-6157] synthesizing module 'normal_divider' [C:/Users/a3840/Desktop/axi/normal_divider.v:3]
+WARNING: [Synth 8-5788] Register a_save_reg in module normal_divider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/a3840/Desktop/axi/normal_divider.v:34]
+WARNING: [Synth 8-5788] Register b_save_reg in module normal_divider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/a3840/Desktop/axi/normal_divider.v:35]
+WARNING: [Synth 8-5788] Register SR_reg in module normal_divider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/a3840/Desktop/axi/normal_divider.v:25]
+WARNING: [Synth 8-5788] Register NEG_DIVISOR_reg in module normal_divider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/a3840/Desktop/axi/normal_divider.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'normal_divider' (13#1) [C:/Users/a3840/Desktop/axi/normal_divider.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [C:/Users/a3840/Desktop/axi/hilo_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (14#1) [C:/Users/a3840/Desktop/axi/hilo_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'except' [C:/Users/a3840/Desktop/axi/except.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'except' (15#1) [C:/Users/a3840/Desktop/axi/except.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cp0_reg' [C:/Users/a3840/Desktop/axi/cp0_reg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cp0_reg' (16#1) [C:/Users/a3840/Desktop/axi/cp0_reg.v:4]
+WARNING: [Synth 8-7023] instance 'CP0' of module 'cp0_reg' has 21 connections declared, but only 15 given [C:/Users/a3840/Desktop/axi/datapath.v:312]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [C:/Users/a3840/Desktop/axi/hazard_unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (17#1) [C:/Users/a3840/Desktop/axi/hazard_unit.v:3]
+WARNING: [Synth 8-7023] instance 'HazardUnit' of module 'hazard_unit' has 36 connections declared, but only 35 given [C:/Users/a3840/Desktop/axi/datapath.v:332]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized2' [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized2' (17#1) [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized3' [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+	Parameter N bound to: 130 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized3' (17#1) [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized4' [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+	Parameter N bound to: 214 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized4' (17#1) [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized5' [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+	Parameter N bound to: 269 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized5' (17#1) [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized6' [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+	Parameter N bound to: 101 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized6' (17#1) [C:/Users/a3840/Desktop/axi/flopenrc.v:3]
+WARNING: [Synth 8-3848] Net HiLoReadE in module/entity datapath does not have driver. [C:/Users/a3840/Desktop/axi/datapath.v:344]
+WARNING: [Synth 8-3848] Net HiLoWriteW in module/entity datapath does not have driver. [C:/Users/a3840/Desktop/axi/datapath.v:350]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (18#1) [C:/Users/a3840/Desktop/axi/datapath.v:3]
+WARNING: [Synth 8-7023] instance 'datapath' of module 'datapath' has 51 connections declared, but only 48 given [C:/Users/a3840/Desktop/axi/sram_mips.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'sram_mips' (19#1) [C:/Users/a3840/Desktop/axi/sram_mips.v:3]
+INFO: [Synth 8-6157] synthesizing module 'i_sram_to_sram_like' [C:/Users/a3840/Desktop/axi/i_sram_to_sram_like.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'i_sram_to_sram_like' (20#1) [C:/Users/a3840/Desktop/axi/i_sram_to_sram_like.v:3]
+INFO: [Synth 8-6157] synthesizing module 'd_sram_to_sram_like' [C:/Users/a3840/Desktop/axi/d_sram_to_sram_like.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'd_sram_to_sram_like' (21#1) [C:/Users/a3840/Desktop/axi/d_sram_to_sram_like.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sram_like_mips' (22#1) [C:/Users/a3840/Desktop/axi/sram_like_mips.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mmu' [C:/Users/a3840/Desktop/axi/mmu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mmu' (23#1) [C:/Users/a3840/Desktop/axi/mmu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bridge_1x2' [C:/Users/a3840/Desktop/axi/bridge_1x2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_1x2' (24#1) [C:/Users/a3840/Desktop/axi/bridge_1x2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cache' [C:/Users/a3840/Desktop/axi/cache.v:3]
+INFO: [Synth 8-6157] synthesizing module 'i_cache' [C:/Users/a3840/Desktop/axi/i_cache.v:3]
+	Parameter INDEX_WIDTH bound to: 10 - type: integer 
+	Parameter OFFSET_WIDTH bound to: 2 - type: integer 
+	Parameter TAG_WIDTH bound to: 20 - type: integer 
+	Parameter CACHE_DEEPTH bound to: 1024 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter RM bound to: 2'b01 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/a3840/Desktop/axi/i_cache.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'i_cache' (25#1) [C:/Users/a3840/Desktop/axi/i_cache.v:3]
+INFO: [Synth 8-6157] synthesizing module 'd_cache' [C:/Users/a3840/Desktop/axi/d_cache-write_through.v:3]
+	Parameter INDEX_WIDTH bound to: 10 - type: integer 
+	Parameter OFFSET_WIDTH bound to: 2 - type: integer 
+	Parameter TAG_WIDTH bound to: 20 - type: integer 
+	Parameter CACHE_DEEPTH bound to: 1024 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter RM bound to: 2'b01 
+	Parameter WM bound to: 2'b11 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/a3840/Desktop/axi/d_cache-write_through.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'd_cache' (26#1) [C:/Users/a3840/Desktop/axi/d_cache-write_through.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cache' (27#1) [C:/Users/a3840/Desktop/axi/cache.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bridge_2x1' [C:/Users/a3840/Desktop/axi/bridge_2x1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_2x1' (28#1) [C:/Users/a3840/Desktop/axi/bridge_2x1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpu_axi_interface' [C:/Users/a3840/Desktop/axi/cpu_axi_interface.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_axi_interface' (29#1) [C:/Users/a3840/Desktop/axi/cpu_axi_interface.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (30#1) [C:/Users/a3840/Desktop/axi/axi_mycpu_top.v:3]
+WARNING: [Synth 8-689] width (4) of port connection 'arlen' does not match port width (8) of module 'mycpu_top' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:327]
+WARNING: [Synth 8-689] width (4) of port connection 'awlen' does not match port width (8) of module 'mycpu_top' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:345]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap' (31#1) [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-15732-LAPTOP-09VEF5P5/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter' (32#1) [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-15732-LAPTOP-09VEF5P5/realtime/axi_clock_converter_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1x2' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-15732-LAPTOP-09VEF5P5/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1x2' (33#1) [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-15732-LAPTOP-09VEF5P5/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap_ram' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-15732-LAPTOP-09VEF5P5/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (34#1) [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-15732-LAPTOP-09VEF5P5/realtime/axi_ram_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element ar_nomask_reg was removed.  [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:132]
+WARNING: [Synth 8-6014] Unused sequential element aw_nomask_reg was removed.  [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:136]
+WARNING: [Synth 8-6014] Unused sequential element w_nomask_reg was removed.  [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap_ram' (35#1) [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/ram_wrap/axi_wrap_ram.v:37]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v:73]
+	Parameter SIMULATION bound to: 1'b0 
+WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v:192]
+WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (36#1) [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/CONFREG/confreg.v:73]
+WARNING: [Synth 8-7023] instance 'u_confreg' of module 'confreg' has 49 connections declared, but only 46 given [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:684]
+INFO: [Synth 8-6155] done synthesizing module 'soc_axi_lite_top' (37#1) [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/soc_axi_lite_top.v:65]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[7]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[6]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[5]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[4]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arburst[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arburst[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlock[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlock[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[7]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[6]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[5]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[4]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awburst[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awburst[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlock[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlock[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arlock[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arlock[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awlock[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awlock[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port ram_random_mask[4]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port ram_random_mask[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port ram_random_mask[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port ram_random_mask[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port ram_random_mask[0]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port rid[3]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port rid[2]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port rid[1]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port rid[0]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port rresp[1]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port rresp[0]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port rlast
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port bid[3]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port bid[2]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port bid[1]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port bid[0]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port bresp[1]
+WARNING: [Synth 8-3331] design cpu_axi_interface has unconnected port bresp[0]
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port HiLoReadE
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port DivStallE
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port HiLoWriteM
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port HiLoWriteW
+WARNING: [Synth 8-3331] design except has unconnected port cp0_status[31]
+WARNING: [Synth 8-3331] design except has unconnected port cp0_status[30]
+WARNING: [Synth 8-3331] design except has unconnected port cp0_status[29]
+WARNING: [Synth 8-3331] design except has unconnected port cp0_status[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1208.449 ; gain = 445.680
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1208.449 ; gain = 445.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1208.449 ; gain = 445.680
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 1208.449 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Finished Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter/axi_clock_converter_in_context.xdc] for cell 'u_axi_clock_sync'
+Finished Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter/axi_clock_converter_in_context.xdc] for cell 'u_axi_clock_sync'
+Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Finished Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'pll.clk_pll/inst'
+Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+Finished Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'pll.clk_pll/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/rtl/xilinx_ip/clk_pll/clk_pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc:5]
+Finished Parsing XDC File [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/soc_lite.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_axi_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_axi_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1319.117 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1319.117 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_axi_clock_sync' at clock pin 'm_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_axi_crossbar_1x2' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_axi_ram/ram' at clock pin 's_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.117 ; gain = 556.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.117 ; gain = 556.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for \pll.clk_pll /inst. (constraint file  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for \pll.clk_pll . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_axi_ram/ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_axi_clock_sync. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_axi_crossbar_1x2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.117 ; gain = 556.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "status_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cause_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "badvaddr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i_cache'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'd_cache'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
+INFO: [Synth 8-5544] ROM "num_csn" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num_a_g" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                      RM |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'i_cache'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                      RM |                              010 |                               01
+                      WM |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'd_cache'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                           000001 |                              000
+                  iSTATE |                           100000 |                              001
+                 iSTATE0 |                           010000 |                              010
+                 iSTATE1 |                           001000 |                              011
+                 iSTATE2 |                           000100 |                              100
+                 iSTATE3 |                           000010 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'confreg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1319.117 ; gain = 556.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |clk_pll_clk_wiz__GC0  |           1|         4|
+|2     |d_cache               |           1|     27887|
+|3     |i_cache               |           1|     27669|
+|4     |mycpu_top__GC0        |           1|     16282|
+|5     |soc_axi_lite_top__GC0 |           1|      4730|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	              269 Bit    Registers := 1     
+	              214 Bit    Registers := 1     
+	              130 Bit    Registers := 1     
+	              101 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 37    
+	               25 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 2087  
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 2     
+	              20K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input    269 Bit        Muxes := 2     
+	   2 Input    214 Bit        Muxes := 2     
+	   2 Input    130 Bit        Muxes := 2     
+	   2 Input    101 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 57    
+	   5 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 3     
+	  10 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 4     
+	   7 Input     24 Bit        Muxes := 1     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 15    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   6 Input      6 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 7     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 16    
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 16    
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 90    
+	   3 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module soc_axi_lite_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module i_cache 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1025  
++---RAMs : 
+	              32K Bit         RAMs := 1     
+	              20K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 12    
+Module d_cache 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1026  
++---RAMs : 
+	              32K Bit         RAMs := 1     
+	              20K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+Module data_sel 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     24 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+Module main_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module alu_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  28 Input      5 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+Module flopenrc 
+Detailed RTL Component Info : 
++---Registers : 
+	               25 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module flopenrc__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module flopenrc__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module normal_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module hilo_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module except 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+Module cp0_reg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 7     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   6 Input     32 Bit        Muxes := 3     
+	  10 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 1     
+	   7 Input     24 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 4     
+Module hazard_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module flopenrc__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module flopenrc__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	              130 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    130 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module flopenrc__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	              214 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    214 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module flopenrc__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	              269 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    269 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module flopenrc__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	              101 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    101 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module i_sram_to_sram_like 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module d_sram_to_sram_like 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module mmu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module bridge_1x2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module bridge_2x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module cpu_axi_interface 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module axi_wrap 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+Module axi_wrap_ram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+Module confreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 21    
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/a3840/Desktop/axi/alu.v:72]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/a3840/Desktop/axi/alu.v:31]
+DSP Report: Generating DSP MultOutHelp, operation Mode is: A*B.
+DSP Report: operator MultOutHelp is absorbed into DSP MultOutHelp.
+DSP Report: operator MultOutHelp is absorbed into DSP MultOutHelp.
+DSP Report: Generating DSP MultOutHelp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator MultOutHelp is absorbed into DSP MultOutHelp.
+DSP Report: operator MultOutHelp is absorbed into DSP MultOutHelp.
+DSP Report: Generating DSP MultOutHelp, operation Mode is: A*B.
+DSP Report: operator MultOutHelp is absorbed into DSP MultOutHelp.
+DSP Report: operator MultOutHelp is absorbed into DSP MultOutHelp.
+DSP Report: Generating DSP MultOutHelp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator MultOutHelp is absorbed into DSP MultOutHelp.
+DSP Report: operator MultOutHelp is absorbed into DSP MultOutHelp.
+DSP Report: Generating DSP HiLoI3, operation Mode is: A*B.
+DSP Report: operator HiLoI3 is absorbed into DSP HiLoI3.
+DSP Report: operator HiLoI3 is absorbed into DSP HiLoI3.
+DSP Report: Generating DSP HiLoI3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator HiLoI3 is absorbed into DSP HiLoI3.
+DSP Report: operator HiLoI3 is absorbed into DSP HiLoI3.
+DSP Report: Generating DSP HiLoI3, operation Mode is: A*B.
+DSP Report: operator HiLoI3 is absorbed into DSP HiLoI3.
+DSP Report: operator HiLoI3 is absorbed into DSP HiLoI3.
+DSP Report: Generating DSP HiLoI3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator HiLoI3 is absorbed into DSP HiLoI3.
+DSP Report: operator HiLoI3 is absorbed into DSP HiLoI3.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[22] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\config_o_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\prid_o_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /CP0/\cause_o_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[99] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[89] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[97] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[93] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[101] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[88] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[92] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[100] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[90] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[98] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_cpui_1/\sram_like_mips/sram_mips/datapath /ID_EX/\DataOut_reg[94] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:49 . Memory (MB): peak = 1433.160 ; gain = 670.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-----------------------------------------------------+-----------------+-----------+----------------------+-----------------------------+
+|Module Name                                          | RTL Object      | Inference | Size (Depth x Width) | Primitives                  | 
++-----------------------------------------------------+-----------------+-----------+----------------------+-----------------------------+
+|\u_cpu/cache/i_cache                                 | cache_tag_reg   | Implied   | 1 K x 20             | RAM64X1D x 32	RAM64M x 96	  | 
+|\u_cpu/cache/i_cache                                 | cache_block_reg | Implied   | 1 K x 32             | RAM64X1D x 32	RAM64M x 160	 | 
+|\u_cpu/cache/d_cache                                 | cache_tag_reg   | Implied   | 1 K x 20             | RAM64X1D x 32	RAM64M x 96	  | 
+|\u_cpu/cache/d_cache                                 | cache_block_reg | Implied   | 1 K x 32             | RAM64X1D x 32	RAM64M x 160	 | 
+|u_cpui_1/\sram_like_mips/sram_mips/datapath /RegFile | rf_reg          | Implied   | 32 x 32              | RAM32M x 12	                | 
++-----------------------------------------------------+-----------------+-----------+----------------------+-----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |clk_pll_clk_wiz__GC0  |           1|         4|
+|2     |d_cache               |           1|      5956|
+|3     |i_cache               |           1|      6011|
+|4     |mycpu_top__GC0        |           1|      9459|
+|5     |soc_axi_lite_top__GC0 |           1|      3124|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 1433.160 ; gain = 670.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1433.160 ; gain = 670.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-----------------------------------------------------+-----------------+-----------+----------------------+-----------------------------+
+|Module Name                                          | RTL Object      | Inference | Size (Depth x Width) | Primitives                  | 
++-----------------------------------------------------+-----------------+-----------+----------------------+-----------------------------+
+|\u_cpu/cache/i_cache                                 | cache_tag_reg   | Implied   | 1 K x 20             | RAM64X1D x 32	RAM64M x 96	  | 
+|\u_cpu/cache/i_cache                                 | cache_block_reg | Implied   | 1 K x 32             | RAM64X1D x 32	RAM64M x 160	 | 
+|\u_cpu/cache/d_cache                                 | cache_tag_reg   | Implied   | 1 K x 20             | RAM64X1D x 32	RAM64M x 96	  | 
+|\u_cpu/cache/d_cache                                 | cache_block_reg | Implied   | 1 K x 32             | RAM64X1D x 32	RAM64M x 160	 | 
+|u_cpui_1/\sram_like_mips/sram_mips/datapath /RegFile | rf_reg          | Implied   | 32 x 32              | RAM32M x 12	                | 
++-----------------------------------------------------+-----------------+-----------+----------------------+-----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |clk_pll_clk_wiz__GC0  |           1|         4|
+|2     |d_cache               |           1|      5956|
+|3     |i_cache               |           1|      6011|
+|4     |mycpu_top__GC0        |           1|      9459|
+|5     |soc_axi_lite_top__GC0 |           1|      3124|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:57 ; elapsed = 00:02:08 . Memory (MB): peak = 1464.727 ; gain = 701.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:00 ; elapsed = 00:02:11 . Memory (MB): peak = 1468.660 ; gain = 705.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:00 ; elapsed = 00:02:11 . Memory (MB): peak = 1468.660 ; gain = 705.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1468.660 ; gain = 705.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1468.660 ; gain = 705.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1468.660 ; gain = 705.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1468.660 ; gain = 705.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |axi_clock_converter |         1|
+|2     |axi_crossbar_1x2    |         1|
+|3     |axi_ram             |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |axi_clock_converter |     1|
+|2     |axi_crossbar_1x2    |     1|
+|3     |axi_ram             |     1|
+|4     |BUFG                |     3|
+|5     |CARRY4              |   195|
+|6     |DSP48E1             |     8|
+|7     |LUT1                |   236|
+|8     |LUT2                |   857|
+|9     |LUT3                |   615|
+|10    |LUT4                |   365|
+|11    |LUT5                |   570|
+|12    |LUT6                |  4417|
+|13    |MUXF7               |   484|
+|14    |MUXF8               |   199|
+|15    |PLLE2_ADV           |     1|
+|16    |RAM32M              |    12|
+|17    |RAM64M              |   512|
+|18    |RAM64X1D            |   128|
+|19    |FDCE                |     7|
+|20    |FDRE                |  4189|
+|21    |FDSE                |    24|
+|22    |IBUF                |    10|
+|23    |OBUF                |    35|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------------+------+
+|      |Instance                  |Module                   |Cells |
++------+--------------------------+-------------------------+------+
+|1     |top                       |                         | 13503|
+|2     |  \pll.clk_pll            |clk_pll                  |     5|
+|3     |    inst                  |clk_pll_clk_wiz          |     5|
+|4     |  u_axi_ram               |axi_wrap_ram             |   115|
+|5     |  u_confreg               |confreg                  |  1183|
+|6     |  u_cpu                   |mycpu_top                | 11562|
+|7     |    cache                 |cache                    |  6853|
+|8     |      d_cache             |d_cache                  |  3401|
+|9     |      i_cache             |i_cache                  |  3452|
+|10    |    cpu_axi_interface     |cpu_axi_interface        |   106|
+|11    |    mmu                   |mmu                      |     2|
+|12    |    sram_like_mips        |sram_like_mips           |  4601|
+|13    |      d_sram_to_sram_like |d_sram_to_sram_like      |    51|
+|14    |      i_sram_to_sram_like |i_sram_to_sram_like      |    70|
+|15    |      sram_mips           |sram_mips                |  4480|
+|16    |        controller        |controller               |   646|
+|17    |          EX_MEM          |flopenrc__parameterized0 |   197|
+|18    |          ID_EX           |flopenrc                 |   447|
+|19    |          MEM_WB          |flopenrc__parameterized1 |     2|
+|20    |        datapath          |datapath                 |  3833|
+|21    |          CP0             |cp0_reg                  |   228|
+|22    |          EX_MEM          |flopenrc__parameterized5 |   702|
+|23    |          HiLoReg         |hilo_reg                 |    65|
+|24    |          ID_EX           |flopenrc__parameterized4 |  1362|
+|25    |          IF_ID           |flopenrc__parameterized3 |   584|
+|26    |          MEM_WB          |flopenrc__parameterized6 |   105|
+|27    |          RegFile         |regfile                  |    17|
+|28    |          alu             |alu                      |   265|
+|29    |          div             |normal_divider           |   340|
+|30    |          pc              |flopenrc__parameterized2 |   165|
++------+--------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1468.660 ; gain = 705.891
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:48 ; elapsed = 00:02:08 . Memory (MB): peak = 1468.660 ; gain = 595.223
+Synthesis Optimization Complete : Time (s): cpu = 00:02:01 ; elapsed = 00:02:12 . Memory (MB): peak = 1468.660 ; gain = 705.891
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1480.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1539 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1482.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 652 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 512 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+222 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:02:18 . Memory (MB): peak = 1482.027 ; gain = 1011.973
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1482.027 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/perf_test_v0.01/soc_axi_perf/run_vivado/mycpu_prj1/mycpu.runs/synth_1/soc_axi_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_axi_lite_top_utilization_synth.rpt -pb soc_axi_lite_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 12 15:49:37 2024...

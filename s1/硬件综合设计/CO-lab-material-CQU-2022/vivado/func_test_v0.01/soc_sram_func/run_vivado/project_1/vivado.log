@@ -1,0 +1,1546 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jan 12 22:39:33 2024
+# Process ID: 17936
+# Current directory: C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13344 C:\Users\a3840\Desktop\CO-lab-material-CQU-2022\CO-lab-material-CQU-2022\vivado\func_test_v0.01\soc_sram_func\run_vivado\project_1\project_1.xpr
+# Log file: C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/vivado.log
+# Journal file: C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1'
+INFO: [Project 1-313] Project file moved from '/home/cyy/colab/colab-workbench/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files', nor could it be found using path 'C:/home/cyy/colab/colab-workbench/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 921.402 ; gain = 248.145
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/a3840/Desktop/src/sram/defines.vh
+add_files -norecurse {C:/Users/a3840/Desktop/src/sram/data_sel.v C:/Users/a3840/Desktop/src/sram/sram_mips.v C:/Users/a3840/Desktop/src/sram/controller.v C:/Users/a3840/Desktop/src/sram/datapath.v C:/Users/a3840/Desktop/src/sram/normal_divider.v C:/Users/a3840/Desktop/src/sram/flopenrc.v C:/Users/a3840/Desktop/src/sram/hazard_unit.v C:/Users/a3840/Desktop/src/sram/sram_mycpu_top.v C:/Users/a3840/Desktop/src/sram/mmu.v C:/Users/a3840/Desktop/src/sram/instdec.v C:/Users/a3840/Desktop/src/sram/except.v C:/Users/a3840/Desktop/src/sram/regfile.v C:/Users/a3840/Desktop/src/sram/alu.v C:/Users/a3840/Desktop/src/sram/main_decoder.v C:/Users/a3840/Desktop/src/sram/cp0_reg.v C:/Users/a3840/Desktop/src/sram/alu_decoder.v C:/Users/a3840/Desktop/src/sram/hilo_reg.v}
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/a3840/Desktop/func_3/func_3/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../func_3/func_3/obj/inst_ram.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Users/a3840/Desktop/func_3/func_3/obj/inst_ram.coe}] [get_ips inst_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/a3840/Desktop/func_3/func_3/obj/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../func_3/func_3/obj/inst_ram.coe'
+generate_target all [get_files  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_ram'...
+catch { config_ip_cache -export [get_ips -all inst_ram] }
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -no_script -sync -force -quiet
+launch_runs -jobs 8 inst_ram_synth_1
+[Fri Jan 12 22:43:01 2024] Launched inst_ram_synth_1...
+Run output will be captured here: C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/inst_ram_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/a3840/Desktop/func_3/func_3/obj/data_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../../func_3/func_3/obj/data_ram.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Users/a3840/Desktop/func_3/func_3/obj/data_ram.coe}] [get_ips data_ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/a3840/Desktop/func_3/func_3/obj/data_ram.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../func_3/func_3/obj/data_ram.coe'
+delete_ip_run [get_files -of_objects [get_fileset data_ram] C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+INFO: [Project 1-386] Moving file 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci' from fileset 'data_ram' to fileset 'sources_1'.
+set_property generate_synth_checkpoint false [get_files  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+generate_target all [get_files  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'data_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'data_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'data_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'data_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'data_ram'...
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_pll'...
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_run clk_pll_synth_1
+[Fri Jan 12 22:43:34 2024] Launched clk_pll_synth_1...
+Run output will be captured here: C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/clk_pll_synth_1/runme.log
+wait_on_run clk_pll_synth_1
+
+[Fri Jan 12 22:43:34 2024] Waiting for clk_pll_synth_1 to finish...
+[Fri Jan 12 22:43:39 2024] Waiting for clk_pll_synth_1 to finish...
+[Fri Jan 12 22:43:44 2024] Waiting for clk_pll_synth_1 to finish...
+[Fri Jan 12 22:43:49 2024] Waiting for clk_pll_synth_1 to finish...
+[Fri Jan 12 22:43:59 2024] Waiting for clk_pll_synth_1 to finish...
+[Fri Jan 12 22:44:09 2024] Waiting for clk_pll_synth_1 to finish...
+[Fri Jan 12 22:44:19 2024] Waiting for clk_pll_synth_1 to finish...
+
+*** Running vivado
+    with args -log clk_pll.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_pll.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source clk_pll.tcl -notrace
+Command: synth_design -top clk_pll -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13840 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 991.012 ; gain = 234.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll_clk_wiz' [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 9 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 18 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 9 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (2#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll_clk_wiz' (4#1) [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (5#1) [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.v:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1066.465 ; gain = 310.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1066.465 ; gain = 310.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1066.465 ; gain = 310.137
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1066.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_pll_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/clk_pll_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/clk_pll_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/clk_pll_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1076.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1076.926 ; gain = 0.004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1076.926 ; gain = 320.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1076.926 ; gain = 320.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/clk_pll_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1076.926 ; gain = 320.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1076.926 ; gain = 320.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1076.926 ; gain = 320.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1116.578 ; gain = 360.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1116.578 ; gain = 360.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1126.141 ; gain = 369.812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1141.938 ; gain = 385.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1141.938 ; gain = 385.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1141.938 ; gain = 385.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1141.938 ; gain = 385.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1141.938 ; gain = 385.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1141.938 ; gain = 385.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |PLLE2_ADV |     1|
+|3     |IBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |     5|
+|2     |  inst   |clk_pll_clk_wiz |     5|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1141.938 ; gain = 385.609
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1141.938 ; gain = 375.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1141.938 ; gain = 385.609
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1141.938 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1163.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1163.609 ; gain = 691.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.609 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/clk_pll_synth_1/clk_pll.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP clk_pll, cache-ID = d312e70b7462546b
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.609 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.runs/clk_pll_synth_1/clk_pll.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clk_pll_utilization_synth.rpt -pb clk_pll_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 12 22:44:17 2024...
+[Fri Jan 12 22:44:19 2024] clk_pll_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:45 . Memory (MB): peak = 1008.969 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/alu_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2458] undeclared symbol BalD, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:103]
+INFO: [VRFC 10-2458] undeclared symbol HiLoReadE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:171]
+INFO: [VRFC 10-2458] undeclared symbol CP0ReadE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:180]
+INFO: [VRFC 10-2458] undeclared symbol HiLoWriteW, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:248]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/cp0_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/data_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/except.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module except
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/hazard_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/normal_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normal_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/sram_mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_mips
+INFO: [VRFC 10-2458] undeclared symbol ALUSrcE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:132]
+INFO: [VRFC 10-2458] undeclared symbol ImmSignE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:133]
+INFO: [VRFC 10-2458] undeclared symbol BreakM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:149]
+INFO: [VRFC 10-2458] undeclared symbol SyscallM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:150]
+INFO: [VRFC 10-2458] undeclared symbol EretM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:151]
+INFO: [VRFC 10-2458] undeclared symbol InvalidM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:152]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/sram_mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 51e12c418e714f398eb466504c7e82bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 51e12c418e714f398eb466504c7e82bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'wea' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:167]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'btn_step' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:226]
+WARNING: [VRFC 10-5021] port 'HiLoWriteW' is not connected on this instance [C:/Users/a3840/Desktop/src/sram/sram_mips.v:158]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_sel
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.alu_decoder
+Compiling module xil_defaultlib.flopenrc(N=26)
+Compiling module xil_defaultlib.flopenrc(N=13)
+Compiling module xil_defaultlib.flopenrc(N=3)
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.normal_divider
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.except
+Compiling module xil_defaultlib.cp0_reg
+Compiling module xil_defaultlib.hazard_unit
+Compiling module xil_defaultlib.flopenrc
+Compiling module xil_defaultlib.flopenrc(N=130)
+Compiling module xil_defaultlib.flopenrc(N=214)
+Compiling module xil_defaultlib.flopenrc(N=269)
+Compiling module xil_defaultlib.flopenrc(N=101)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sram_mips
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.mycpu_top
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" Line 123. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan 12 22:44:34 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1009.320 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1040.355 ; gain = 31.387
+run all
+==============================================================
+Test begin!
+        [  22000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  32000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  42000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  52000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  62000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  72000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  82000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  92000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 242000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 282000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 292000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 332000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 352000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 362000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 402000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 442000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 482000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 502000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 532000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 552000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 572000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 582000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 592000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 602000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 642000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 652000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 672000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 712000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 722000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 762000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 772000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 792000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 932000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 952000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 962000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 982000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1002000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1012000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1022000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1032000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1042000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1052000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1062000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1072000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1092000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1242000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1282000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1292000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1332000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1352000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1362000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1402000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1442000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1482000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1502000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1532000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1552000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1572000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1582000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1592000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1602000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1642000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1652000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1672000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1712000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1722000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1762000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1772000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1792000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1932000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1952000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1962000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1982000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2002000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2012000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2022000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2032000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2042000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2052000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2062000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2072000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2092000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2242000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2282000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2292000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2332000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2352000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2362000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2402000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2442000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2482000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2502000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2532000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2552000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2572000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2582000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2592000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2602000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2642000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2652000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2672000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2712000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2722000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2762000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2772000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2792000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2932000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2952000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2962000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2982000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3002000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3012000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3022000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3032000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3042000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3052000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3062000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3072000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3092000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3242000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3282000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3292000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3332000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3352000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3362000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3402000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3442000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3482000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3502000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3532000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3552000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3572000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3582000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3592000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3602000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3642000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3652000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3672000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3712000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3722000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3762000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3772000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3792000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3932000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3952000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3962000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3982000 ns] Test is running, debug_wb_pc = 0x00000000
+        [3992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4002000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4012000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4022000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4032000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4042000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4052000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4062000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4072000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4092000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4242000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4282000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4292000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4332000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4352000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4362000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4402000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4442000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4482000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4502000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4532000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4552000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4572000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4582000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4592000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4602000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4642000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4652000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4672000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4712000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4722000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4762000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4772000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4792000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4932000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4952000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4962000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4982000 ns] Test is running, debug_wb_pc = 0x00000000
+        [4992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5002000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5012000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5022000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5032000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5042000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5052000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5062000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5072000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5092000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5242000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5282000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5292000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5332000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5352000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5362000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5402000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5442000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [5482000 ns] Test is running, debug_wb_pc = 0x00000000
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1052.633 ; gain = 0.246
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+delete_ip_run [get_files -of_objects [get_fileset inst_ram] C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+INFO: [Project 1-386] Moving file 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci' from fileset 'inst_ram' to fileset 'sources_1'.
+set_property generate_synth_checkpoint false [get_files  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+generate_target all [get_files  C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_ram'...
+export_ip_user_files -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -directory C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/data_ram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/sim/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/sim/inst_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/alu_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/BRIDGE/bridge_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bridge_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2458] undeclared symbol conf_we, assumed default net type wire [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2458] undeclared symbol BalD, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:103]
+INFO: [VRFC 10-2458] undeclared symbol HiLoReadE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:171]
+INFO: [VRFC 10-2458] undeclared symbol CP0ReadE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:180]
+INFO: [VRFC 10-2458] undeclared symbol HiLoWriteW, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/controller.v:248]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/cp0_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/data_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/except.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module except
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/flopenrc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenrc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/hazard_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/mmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/normal_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module normal_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/sram_mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_mips
+INFO: [VRFC 10-2458] undeclared symbol ALUSrcE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:132]
+INFO: [VRFC 10-2458] undeclared symbol ImmSignE, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:133]
+INFO: [VRFC 10-2458] undeclared symbol BreakM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:149]
+INFO: [VRFC 10-2458] undeclared symbol SyscallM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:150]
+INFO: [VRFC 10-2458] undeclared symbol EretM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:151]
+INFO: [VRFC 10-2458] undeclared symbol InvalidM, assumed default net type wire [C:/Users/a3840/Desktop/src/sram/sram_mips.v:152]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/src/sram/sram_mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 51e12c418e714f398eb466504c7e82bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 51e12c418e714f398eb466504c7e82bf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'wea' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:167]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'btn_step' [C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:226]
+WARNING: [VRFC 10-5021] port 'HiLoWriteW' is not connected on this instance [C:/Users/a3840/Desktop/src/sram/sram_mips.v:158]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_sel
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.alu_decoder
+Compiling module xil_defaultlib.flopenrc(N=26)
+Compiling module xil_defaultlib.flopenrc(N=13)
+Compiling module xil_defaultlib.flopenrc(N=3)
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.normal_divider
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.except
+Compiling module xil_defaultlib.cp0_reg
+Compiling module xil_defaultlib.hazard_unit
+Compiling module xil_defaultlib.flopenrc
+Compiling module xil_defaultlib.flopenrc(N=130)
+Compiling module xil_defaultlib.flopenrc(N=214)
+Compiling module xil_defaultlib.flopenrc(N=269)
+Compiling module xil_defaultlib.flopenrc(N=101)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sram_mips
+Compiling module xil_defaultlib.mmu
+Compiling module xil_defaultlib.mycpu_top
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_ram
+Compiling module xil_defaultlib.bridge_1x2
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_lite_top(SIMULATION=1'b1)
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/testbench/mycpu_tb.v" Line 123. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/a3840/Desktop/CO-lab-material-CQU-2022/CO-lab-material-CQU-2022/vivado/func_test_v0.01/soc_sram_func/run_vivado/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.inst_ram.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.data_ram.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1066.723 ; gain = 0.000
+update_compile_order -fileset sources_1
+run all
+==============================================================
+Test begin!
+        [  22000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  32000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  42000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  52000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  62000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  72000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  82000 ns] Test is running, debug_wb_pc = 0x00000000
+        [  92000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 242000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 282000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 292000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 332000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 352000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 362000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 402000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 442000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 482000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 502000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 532000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 552000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 572000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 582000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 592000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 602000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 642000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 652000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 672000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 712000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 722000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 762000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 772000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 792000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 932000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 952000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 962000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 982000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1002000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1012000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1022000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1032000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1042000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1052000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1062000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1072000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1092000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1242000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1252000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1262000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1272000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1282000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1292000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1302000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1312000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1322000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1332000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1342000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1352000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1362000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1372000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1382000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1392000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1402000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1412000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1422000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1432000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1442000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1452000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1462000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1472000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1482000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1492000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1502000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1512000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1522000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1532000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1542000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1552000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1562000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1572000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1582000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1592000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1602000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1612000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1622000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1632000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1642000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1652000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1662000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1672000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1682000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1692000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1702000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1712000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1722000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1732000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1742000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1752000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1762000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1772000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1782000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1792000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1802000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1812000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1822000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1832000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1842000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1852000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1862000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1872000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1882000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1892000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1902000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1912000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1922000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1932000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1942000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1952000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1962000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1972000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1982000 ns] Test is running, debug_wb_pc = 0x00000000
+        [1992000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2002000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2012000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2022000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2032000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2042000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2052000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2062000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2072000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2082000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2092000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2102000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2112000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2122000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2132000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2142000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2152000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2162000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2172000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2182000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2192000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2202000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2212000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2222000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2232000 ns] Test is running, debug_wb_pc = 0x00000000
+        [2242000 ns] Test is running, debug_wb_pc = 0x00000000
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1066.723 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 12 23:11:50 2024...
